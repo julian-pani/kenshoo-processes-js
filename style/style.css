@@ -1,0 +1,59 @@
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.input-group {
+  margin: 20px 0px;
+}
+
+svg {
+  height: 150px;
+}
+
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+}
+
+.process {
+  font-size: 12px;
+  /* font-size: 2vmin; */
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+.process-container.showing-children {
+  border: 1px solid rgba(38, 114, 114, 0.4);
+  padding: 5px;
+  margin: 10px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.children .process {
+  margin-bottom: 10px;
+  font-size: 10px;
+  /* font-size: 1.5vmax; */
+}
+
+.children .toggleContent-closed {
+  visibility: hidden;
+  opacity: 0.5;
+  height: 0px;
+  transition: opacity 0.7s linear, height 0.15s linear;
+}
+
+.children .toggleContent-open {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  transition: opacity 0.7s linear, height 0.15s linear;
+}
+
+p.process-ids {
+  font-size: 8px;
+  /* font-size: 1.2vmax; */
+}
